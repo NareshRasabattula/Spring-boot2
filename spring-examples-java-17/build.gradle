@@ -1,0 +1,17 @@
+
+project(':spring-bank') {}
+project(':spring-demo') {}
+project(':spring-fileserver') {}
+project(':spring-security') {}
+project(':spring-security-jwt') {}
+project(':spring-jcasbin') {}
+project(':spring-di') {}
+project(':spring-websockets') {}
+project(':spring-proxy') {}
+project(':spring-data') {}
+project(':spring-webflux') {}
+project(':spring-kafka') {}
+project(':spring-mongo') {}
+project(':spring-cloud-config') {}
+project(':spring-redis') {}
+project(':spring-mockwebserver') {}

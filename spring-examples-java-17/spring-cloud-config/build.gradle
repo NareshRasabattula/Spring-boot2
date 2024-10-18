@@ -1,0 +1,18 @@
+subprojects {
+
+    apply plugin: "java"
+
+    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
+  
+    repositories {
+        mavenCentral()
+    }
+
+}
+
+project(':cloud-config-client') {
+}
+
+project(':cloud-config-server') {
+}

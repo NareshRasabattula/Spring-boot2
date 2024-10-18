@@ -1,0 +1,46 @@
+subprojects {
+
+    apply plugin: "java"
+
+    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
+  
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+
+}
+
+project(':kafka-common') {
+}
+
+project(':kafka-consumer') {
+    dependencies {
+        implementation project(':kafka-common')
+    }
+}
+
+project(':kafka-producer') {
+    dependencies {
+        implementation project(':kafka-common')
+    }
+}
+
+project(':kafka-simple') {
+    dependencies {
+        implementation project(':kafka-common')
+    }
+}
+
+project(':kafka-sync-producer') {
+    dependencies {
+        implementation project(':kafka-common')
+    }
+}
+
+project(':kafka-sync-consumer') {
+    dependencies {
+        implementation project(':kafka-common')
+    }
+}
